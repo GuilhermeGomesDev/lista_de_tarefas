@@ -101,6 +101,25 @@ ul {
     color: #aaa;
 }
 
+
+/* Estilo do botão de exclusão */
+.delete-task {
+    background-color: #0e1243; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    margin-left: 10px; 
+}
+
+/* Estilo do botão de exclusão ao passar o mouse */
+.delete-task:hover {
+    background-color: #191367; 
+}
+
+
 /* Estilos responsivos */
 @media (max-width: 600px) {
     .input-section {

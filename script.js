@@ -21,9 +21,18 @@ function addTask() {
         const taskSpan = document.createElement('span');
         taskSpan.textContent = taskText;
 
+        // Criar o botão de exclusão
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Excluir';
+        deleteButton.className = 'delete-task';
+        deleteButton.addEventListener('click', function() {
+            taskList.removeChild(listItem); // Remove o item da lista
+        });
+
         // Adicionar os elementos ao item da lista
         listItem.appendChild(checkbox);
         listItem.appendChild(taskSpan);
+        listItem.appendChild(deleteButton); // Adiciona o botão de exclusão ao item
 
         // Adicionar o item à lista de tarefas
         taskList.appendChild(listItem);
