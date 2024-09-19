@@ -22,6 +22,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin: 0 20px; /* Garante que tenha espaço nas laterais em telas menores */
+    position: relative; /* Adiciona o contexto de posicionamento para o botão de alternância de tema */
 }
 
 /* Título principal */
@@ -71,6 +72,9 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0; 
+    max-height: 300px; /* Altura máxima para a lista de tarefas */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-bottom: 60px; /* Espaço para o botão de alternância de tema */
 }
 
 /* Estilo de cada tarefa */
@@ -95,13 +99,6 @@ ul {
     margin-right: 10px; /* Espaço entre o texto e a checkbox */
 }
 
-/* Tarefa completada */
-.completed {
-    text-decoration: line-through;
-    color: #aaa;
-}
-
-
 /* Estilo do botão de exclusão */
 .delete-task {
     background-color: #0e1243; 
@@ -119,6 +116,11 @@ ul {
     background-color: #191367; 
 }
 
+/* Tarefa completada */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
 
 /* Estilos responsivos */
 @media (max-width: 600px) {
