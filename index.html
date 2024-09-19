@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <!-- Botão de alternância entre os modos Claro/Escuro -->
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+        <span id="theme-label">Modo Claro</span>
+    </div>
+    </header>
+    
+    <!-- Container principal da aplicação -->
+    <div class="container">
+        <h1>Minha Lista de Tarefas</h1>
+        <!-- Input para adicionar novas tarefas -->
+        <div class="input-section">
+            <input type="text" id="new-task" placeholder="Adicione uma nova tarefa...">
+            <button id="add-task">Adicionar</button>
+        </div>
+        
+        <!-- Lista de tarefas -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
